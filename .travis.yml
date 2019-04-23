@@ -1,0 +1,17 @@
+language: c
+sudo: true
+
+before_install:
+- sudo apt-get update
+- sudo apt-get -y install wget
+- sudo apt-get -y install unzip
+
+env:
+- CPU=X86
+- CPU=arm
+- CPU=mips
+- CPU=arm_64
+- CPU=tegra
+
+script:
+- make build_image 
