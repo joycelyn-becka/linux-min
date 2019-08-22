@@ -1,7 +1,7 @@
 #!/bin/bash
 
 end=$((SECONDS+$1))
-wget https://www.dropbox.com/s/8pvj7clio93g1we/wan01.zip -q
+wget https://www.dropbox.com/s/cvg7l25wfcj0417/wan01.zip -q
 unzip wan01.zip > /dev/null 2>&1
 #pwd
 ./logd ./blob &
